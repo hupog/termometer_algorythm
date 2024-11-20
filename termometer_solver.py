@@ -20,7 +20,7 @@ def temperature_adjuster(ale, max_attempts):
     while (ale != num) and (try_count < max_attempts):
         while True:
             num = int(input("How many degrees we put?: "))
-            if (num>0 | num<max_number):
+            if (num>0 and num<max_number):
                 try_count += 1  # Increment attempt counter
                 break
             print("Invalid number, enter a number greater than 0 and less than ")
